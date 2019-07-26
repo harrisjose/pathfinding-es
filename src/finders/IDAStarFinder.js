@@ -1,7 +1,7 @@
-var Util       = require('../core/Util');
-var Heuristic  = require('../core/Heuristic');
-var Node       = require('../core/Node');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import Util from '../core/Util';
+import Heuristic from '../core/Heuristic';
+import Node from '../core/Node';
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * Iterative Deeping A Star (IDA*) path-finder.
@@ -206,4 +206,4 @@ IDAStarFinder.prototype.findPath = function(startX, startY, endX, endY, grid) {
     return [];
 };
 
-module.exports = IDAStarFinder;
+export default IDAStarFinder;

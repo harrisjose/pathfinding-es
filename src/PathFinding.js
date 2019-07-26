@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     'Heap'                      : require('heap'),
     'Node'                      : require('./core/Node'),
     'Grid'                      : require('./core/Grid'),

@@ -1,5 +1,5 @@
-var Util = require('../core/Util');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import Util from '../core/Util';
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * Breadth-First-Search path finder.
@@ -76,4 +76,4 @@ BreadthFirstFinder.prototype.findPath = function(startX, startY, endX, endY, gri
     return [];
 };
 
-module.exports = BreadthFirstFinder;
+export default BreadthFirstFinder;

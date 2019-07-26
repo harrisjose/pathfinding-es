@@ -1,8 +1,9 @@
 /**
  * @author imor / https://github.com/imor
  */
-var JumpPointFinderBase = require('./JumpPointFinderBase');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import JumpPointFinderBase from './JumpPointFinderBase';
+
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * Path finder using the Jump Point Search algorithm which moves
@@ -171,4 +172,4 @@ JPFMoveDiagonallyIfNoObstacles.prototype._findNeighbors = function(node) {
     return neighbors;
 };
 
-module.exports = JPFMoveDiagonallyIfNoObstacles;
+export default JPFMoveDiagonallyIfNoObstacles;

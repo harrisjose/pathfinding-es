@@ -1,10 +1,11 @@
 /**
  * @author imor / https://github.com/imor
  */
-var Heap       = require('heap');
-var Util       = require('../core/Util');
-var Heuristic  = require('../core/Heuristic');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import Heap from 'heap';
+
+import Util from '../core/Util';
+import Heuristic from '../core/Heuristic';
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * Base class for the Jump Point Search algorithm
@@ -111,4 +112,4 @@ JumpPointFinderBase.prototype._identifySuccessors = function(node) {
     }
 };
 
-module.exports = JumpPointFinderBase;
+export default JumpPointFinderBase;

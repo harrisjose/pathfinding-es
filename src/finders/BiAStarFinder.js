@@ -1,7 +1,7 @@
-var Heap       = require('heap');
-var Util       = require('../core/Util');
-var Heuristic  = require('../core/Heuristic');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import Heap from 'heap';
+import Util from '../core/Util';
+import Heuristic from '../core/Heuristic';
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * A* path-finder.
@@ -178,4 +178,4 @@ BiAStarFinder.prototype.findPath = function(startX, startY, endX, endY, grid) {
     return [];
 };
 
-module.exports = BiAStarFinder;
+export default BiAStarFinder;

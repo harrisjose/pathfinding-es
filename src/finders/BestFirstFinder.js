@@ -1,4 +1,4 @@
-var AStarFinder = require('./AStarFinder');
+import AStarFinder from './AStarFinder';
 
 /**
  * Best-First-Search path-finder.
@@ -25,4 +25,4 @@ function BestFirstFinder(opt) {
 BestFirstFinder.prototype = new AStarFinder();
 BestFirstFinder.prototype.constructor = BestFirstFinder;
 
-module.exports = BestFirstFinder;
+export default BestFirstFinder;

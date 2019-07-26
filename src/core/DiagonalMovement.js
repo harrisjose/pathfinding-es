@@ -5,4 +5,4 @@ var DiagonalMovement = {
     OnlyWhenNoObstacles: 4
 };
 
-module.exports = DiagonalMovement;
+export default DiagonalMovement;

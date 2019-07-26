@@ -12,7 +12,6 @@ function backtrace(node) {
     }
     return path.reverse();
 }
-exports.backtrace = backtrace;
 
 /**
  * Backtrace from start and end node, and return the path.
@@ -25,7 +24,6 @@ function biBacktrace(nodeA, nodeB) {
         pathB = backtrace(nodeB);
     return pathA.concat(pathB.reverse());
 }
-exports.biBacktrace = biBacktrace;
 
 /**
  * Compute the length of the path.
@@ -43,7 +41,6 @@ function pathLength(path) {
     }
     return sum;
 }
-exports.pathLength = pathLength;
 
 
 /**
@@ -89,7 +86,6 @@ function interpolate(x0, y0, x1, y1) {
 
     return line;
 }
-exports.interpolate = interpolate;
 
 
 /**
@@ -124,7 +120,6 @@ function expandPath(path) {
 
     return expanded;
 }
-exports.expandPath = expandPath;
 
 
 /**
@@ -174,7 +169,6 @@ function smoothenPath(grid, path) {
 
     return newPath;
 }
-exports.smoothenPath = smoothenPath;
 
 
 /**
@@ -243,4 +237,4 @@ function compressPath(path) {
 
     return compressed;
 }
-exports.compressPath = compressPath;
+export { backtrace, biBacktrace, pathLength, interpolate, expandPath, smoothenPath, compressPath };

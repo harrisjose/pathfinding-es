@@ -1,5 +1,5 @@
-var Util = require('../core/Util');
-var DiagonalMovement = require('../core/DiagonalMovement');
+import Util from '../core/Util';
+import DiagonalMovement from '../core/DiagonalMovement';
 
 /**
  * Bi-directional Breadth-First-Search path finder.
@@ -112,4 +112,4 @@ BiBreadthFirstFinder.prototype.findPath = function(startX, startY, endX, endY, g
     return [];
 };
 
-module.exports = BiBreadthFirstFinder;
+export default BiBreadthFirstFinder;

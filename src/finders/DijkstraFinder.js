@@ -1,4 +1,4 @@
-var AStarFinder = require('./AStarFinder');
+import AStarFinder from './AStarFinder';
 
 /**
  * Dijkstra path-finder.
@@ -21,4 +21,4 @@ function DijkstraFinder(opt) {
 DijkstraFinder.prototype = new AStarFinder();
 DijkstraFinder.prototype.constructor = DijkstraFinder;
 
-module.exports = DijkstraFinder;
+export default DijkstraFinder;

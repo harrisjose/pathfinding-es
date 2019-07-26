@@ -1,4 +1,4 @@
-var BiAStarFinder = require('./BiAStarFinder');
+import BiAStarFinder from './BiAStarFinder';
 
 /**
  * Bi-direcitional Best-First-Search path-finder.
@@ -25,4 +25,4 @@ function BiBestFirstFinder(opt) {
 BiBestFirstFinder.prototype = new BiAStarFinder();
 BiBestFirstFinder.prototype.constructor = BiBestFirstFinder;
 
-module.exports = BiBestFirstFinder;
+export default BiBestFirstFinder;

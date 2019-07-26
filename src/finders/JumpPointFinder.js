@@ -1,11 +1,12 @@
 /**
  * @author aniero / https://github.com/aniero
  */
-var DiagonalMovement = require('../core/DiagonalMovement');
-var JPFNeverMoveDiagonally = require('./JPFNeverMoveDiagonally');
-var JPFAlwaysMoveDiagonally = require('./JPFAlwaysMoveDiagonally');
-var JPFMoveDiagonallyIfNoObstacles = require('./JPFMoveDiagonallyIfNoObstacles');
-var JPFMoveDiagonallyIfAtMostOneObstacle = require('./JPFMoveDiagonallyIfAtMostOneObstacle');
+import DiagonalMovement from '../core/DiagonalMovement';
+
+import JPFNeverMoveDiagonally from './JPFNeverMoveDiagonally';
+import JPFAlwaysMoveDiagonally from './JPFAlwaysMoveDiagonally';
+import JPFMoveDiagonallyIfNoObstacles from './JPFMoveDiagonallyIfNoObstacles';
+import JPFMoveDiagonallyIfAtMostOneObstacle from './JPFMoveDiagonallyIfAtMostOneObstacle';
 
 /**
  * Path finder using the Jump Point Search algorithm
@@ -28,4 +29,4 @@ function JumpPointFinder(opt) {
     }
 }
 
-module.exports = JumpPointFinder;
+export default JumpPointFinder;

@@ -1,5 +1,5 @@
-var Node = require('./Node');
-var DiagonalMovement = require('./DiagonalMovement');
+import Node from './Node';
+import DiagonalMovement from './DiagonalMovement';
 
 /**
  * The Grid class, which serves as the encapsulation of the layout of the nodes.
@@ -242,4 +242,4 @@ Grid.prototype.clone = function() {
     return newGrid;
 };
 
-module.exports = Grid;
+export default Grid;
