@@ -1,1 +1,1 @@
-module.exports = require('./src/PathFinding');
+module.exports = require("./src/pathfinding");

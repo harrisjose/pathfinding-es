@@ -1,4 +1,4 @@
-import BiAStarFinder from './BiAStarFinder';
+import BiAStarFinder from "./BiAStarFinder";
 
 /**
  * Bi-direcitional Best-First-Search path-finder.
@@ -14,12 +14,10 @@ import BiAStarFinder from './BiAStarFinder';
  *     (defaults to manhattan).
  */
 function BiBestFirstFinder(opt) {
-    BiAStarFinder.call(this, opt);
+  BiAStarFinder.call(this, opt);
 
-    var orig = this.heuristic;
-    this.heuristic = function(dx, dy) {
-        return orig(dx, dy) * 1000000;
-    };
+  const orig = this.heuristic;
+  this.heuristic = (dx, dy) => orig(dx, dy) * 1000000;
 }
 
 BiBestFirstFinder.prototype = new BiAStarFinder();

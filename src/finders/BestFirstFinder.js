@@ -1,4 +1,4 @@
-import AStarFinder from './AStarFinder';
+import AStarFinder from "./AStarFinder";
 
 /**
  * Best-First-Search path-finder.
@@ -14,12 +14,10 @@ import AStarFinder from './AStarFinder';
  *     (defaults to manhattan).
  */
 function BestFirstFinder(opt) {
-    AStarFinder.call(this, opt);
+  AStarFinder.call(this, opt);
 
-    var orig = this.heuristic;
-    this.heuristic = function(dx, dy) {
-        return orig(dx, dy) * 1000000;
-    };
+  const orig = this.heuristic;
+  this.heuristic = (dx, dy) => orig(dx, dy) * 1000000;
 }
 
 BestFirstFinder.prototype = new AStarFinder();

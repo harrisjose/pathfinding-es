@@ -3,7 +3,6 @@
  * @description A collection of heuristic functions.
  */
 export default {
-
   /**
    * Manhattan distance.
    * @param {number} dx - Difference in x.
@@ -11,7 +10,7 @@ export default {
    * @return {number} dx + dy
    */
   manhattan: function(dx, dy) {
-      return dx + dy;
+    return dx + dy;
   },
 
   /**
@@ -21,7 +20,7 @@ export default {
    * @return {number} sqrt(dx * dx + dy * dy)
    */
   euclidean: function(dx, dy) {
-      return Math.sqrt(dx * dx + dy * dy);
+    return Math.sqrt(dx * dx + dy * dy);
   },
 
   /**
@@ -31,8 +30,8 @@ export default {
    * @return {number} sqrt(dx * dx + dy * dy) for grids
    */
   octile: function(dx, dy) {
-      var F = Math.SQRT2 - 1;
-      return (dx < dy) ? F * dx + dy : F * dy + dx;
+    const F = Math.SQRT2 - 1;
+    return dx < dy ? F * dx + dy : F * dy + dx;
   },
 
   /**
@@ -42,7 +41,6 @@ export default {
    * @return {number} max(dx, dy)
    */
   chebyshev: function(dx, dy) {
-      return Math.max(dx, dy);
+    return Math.max(dx, dy);
   }
-
 };

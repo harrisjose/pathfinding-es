@@ -1,4 +1,4 @@
-import AStarFinder from './AStarFinder';
+import AStarFinder from "./AStarFinder";
 
 /**
  * Dijkstra path-finder.
@@ -12,10 +12,8 @@ import AStarFinder from './AStarFinder';
  * @param {DiagonalMovement} opt.diagonalMovement Allowed diagonal movement.
  */
 function DijkstraFinder(opt) {
-    AStarFinder.call(this, opt);
-    this.heuristic = function(dx, dy) {
-        return 0;
-    };
+  AStarFinder.call(this, opt);
+  this.heuristic = (dx, dy) => 0;
 }
 
 DijkstraFinder.prototype = new AStarFinder();
